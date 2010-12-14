@@ -32,7 +32,7 @@ private String comment;
 			return comment;
 	}
 
-	public void setComment(String comment){
+	public void setComment(final String comment){
 			this.comment = comment;
 	}
 
