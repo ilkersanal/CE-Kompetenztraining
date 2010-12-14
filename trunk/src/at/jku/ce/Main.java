@@ -9,13 +9,13 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		Set<DomainObject> objectSet = new HashSet				<DomainObject>();
+		Set<DomainObject> objectSet = new HashSet<DomainObject>();
 
-			objectSet.add(DomainFactory.createDomainObject				("Helga", "Mutter"));
-			objectSet.add(DomainFactory.createDomainObject				("Walter", "Vater"));
-			objectSet.add(DomainFactory.createDomainObject				("Hannah", "Tochter"));
-			objectSet.add(DomainFactory.createDomainObject				("Paul", "Sohn"));
-			objectSet.add(DomainFactory.createDomainObject				("Claudia", "Tochter2"));
+			objectSet.add(DomainFactory.createDomainObject("Helga", "Mutter"));
+			objectSet.add(DomainFactory.createDomainObject("Walter", "Vater"));
+			objectSet.add(DomainFactory.createDomainObject("Hannah", "Tochter"));
+			objectSet.add(DomainFactory.createDomainObject("Paul", "Sohn"));
+			objectSet.add(DomainFactory.createDomainObject("Claudia", "Tochter2"));
 
 		for (DomainObject domainObject : objectSet) {
 			LOGGER.debug(domainObject.getUuid);

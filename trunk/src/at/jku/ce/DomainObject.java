@@ -9,14 +9,14 @@ private String name;
 private String comment;
 
 
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 	/** 
 	* Default Constructor
 	*/
 	
-	public DomainObject(String name, String comment, String id){
+	protected DomainObject(String name, String comment, String id){
 	
 		super();
 		this.name = name;
