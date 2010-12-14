@@ -18,14 +18,11 @@ public class Main {
 			objectSet.add(DomainFactory.createDomainObject("Claudia", "Tochter2"));
 
 		for (DomainObject domainObject : objectSet) {
-<<<<<<< HEAD
 			LOGGER.debug(domainObject.getUuid());
 			LOGGER.debug(domainObject.toString());
 		}
-=======
 			LOGGER.debug(domainObject.getUuid);
 		} 
->>>>>>> 4a6e7c24171372e4c934245d4638c3be86ac8263
 	}
 
 }
