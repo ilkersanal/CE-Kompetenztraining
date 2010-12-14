@@ -47,6 +47,15 @@ private String comment;
 	public String toString() {
 		return "DomainObject [name=" + name + ", comment=" + comment + ", uuid=" + uuid + "]";
 
+	public boolean equals (Object obj) {
+		if (!(obj instanceof DomainObj)) {
+			return false;
+		}
+		DomainObject domainObj = (DomainObject) obj;
+		return uuid.equals(domainObj.getUuid());
+	}
+
+	
 
 	public String id = UUID.randomUUID().toString()
 }
