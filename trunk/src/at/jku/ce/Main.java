@@ -11,16 +11,21 @@ public class Main {
 
 		Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 
-		objectSet.add(new DomainObject("Helga", "Mutter"));
-		objectSet.add(new DomainObject("Walter", "Vater"));
-		objectSet.add(new DomainObject("Hannah", "Tochter"));
-		objectSet.add(new DomainObject("Paul", "Sohn"));
-		objectSet.add(new DomainObject("Claudia", "Baby"));
+			objectSet.add(DomainFactory.createDomainObject("Helga", "Mutter"));
+			objectSet.add(DomainFactory.createDomainObject("Walter", "Vater"));
+			objectSet.add(DomainFactory.createDomainObject("Hannah", "Tochter"));
+			objectSet.add(DomainFactory.createDomainObject("Paul", "Sohn"));
+			objectSet.add(DomainFactory.createDomainObject("Claudia", "Tochter2"));
 
 		for (DomainObject domainObject : objectSet) {
+<<<<<<< HEAD
 			LOGGER.debug(domainObject.getUuid());
 			LOGGER.debug(domainObject.toString());
 		}
+=======
+			LOGGER.debug(domainObject.getUuid);
+		} 
+>>>>>>> 4a6e7c24171372e4c934245d4638c3be86ac8263
 	}
 
 }
