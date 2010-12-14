@@ -16,9 +16,11 @@ private String comment;
 	* Default Constructor
 	*/
 	
-	public DomainObject(String id){
+	public DomainObject(String name, String comment, String id){
 	
 		super();
+		this.name = name;
+		this.comment = comment;
 		this.id = id;
 	}
 
