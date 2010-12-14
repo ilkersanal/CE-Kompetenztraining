@@ -18,4 +18,9 @@ private String name;
 		super();
 		this.id = id;
 	}
+
+	public String getId() {
+		return id;
+	}
+
 }
