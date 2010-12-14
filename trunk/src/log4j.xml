@@ -13,5 +13,8 @@
 		<priority value="ERROR" />
 		<appender-ref ref="console" />
 	</root>
-
+	<logger name = "at.jku.ce" additivity="false" >
+		<level value="DEBUG" />
+		<appender-ref ref="console"/>
+	</logger>
 </log4j:configuration>
