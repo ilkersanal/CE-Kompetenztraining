@@ -6,6 +6,9 @@ private String uuid;
 
 private String name;
 
+private String comment;
+
+
 	public DomainObject() {
 		super();
 	}
@@ -13,9 +16,11 @@ private String name;
 	* Default Constructor
 	*/
 	
-	public DomainObject(String id){
+	public DomainObject(String name, String comment, String id){
 	
 		super();
+		this.name = name;
+		this.comment = comment;
 		this.id = id;
 	}
 
@@ -23,4 +28,15 @@ private String name;
 		return id;
 	}
 
+	public String getComment(){
+			return comment;
+		}
+
+	public void setComment(String comment){
+			this.comment = comment;
+		}
+
+
+
+	public String id = UUID.randomUUID().toString()
 }
